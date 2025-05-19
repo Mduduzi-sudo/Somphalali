@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        /* CSS adjustments to move the Mission and Vision sections higher */
+        .hero-section {
+            margin-top: -70px;  /* Push the hero section upwards */
+        }
+
+        .mission, .vision {
+            padding-top: 40px;  /* Adjust padding for spacing */
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-div">
+        <div class="nav-bar">
+            <div class="Name">
+                <p>SoMphalali MAIZE-MILLING</p>
+            </div>
+            <nav>
+                <ul id="nav" class="menu">
+                    <li><a href="#sub1">HOME</a></li>
+                    <li><a href="Product.html">PRODUCT</a></li> <!-- Link to Product Page -->
+                    <li><a href="contacts.html">CONTACTS</a></li> <!-- Updated link to Contact Us Page -->
+                    <li><a href="Gallery.html">GALLERY</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="instrip">
+            <div class="strip yellow"></div>
+            <div class="strip blue"></div>
+            <div class="strip red"></div>
+            <div class="strip green"></div>
+            <div class="strip yellow"></div>
+            <div class="strip blue"></div>
+            <div class="strip red"></div>
+            <div class="strip green"></div>
+            <div class="strip yellow"></div>
+            <div class="strip blue"></div>
+            <div class="strip red"></div>
+            <div class="strip green"></div>
+            <div class="strip yellow"></div>
+            <div class="strip blue"></div>
+            <div class="strip red"></div>
+            <div class="strip green"></div>
+            <div class="strip yellow"></div>
+            <div class="strip blue"></div>
+            <div class="strip red"></div>
+            <div class="strip green"></div>
+            <div class="strip yellow"></div>
+            <div class="strip blue"></div>
+            <div class="strip red"></div>
+            <div class="strip green"></div>
+            <div class="strip yellow"></div>
+            <div class="strip blue"></div>
+            <div class="strip red"></div>
+            <div class="strip green"></div>
+            <div class="strip yellow"></div>
+            <div class="strip blue"></div>
+            <div class="strip red"></div>
+            <div class="strip green"></div>
+            <div class="strip yellow"></div>
+            <div class="strip blue"></div>
+            <div class="strip red"></div>
+            <div class="strip green"></div>
+            <div class="strip yellow"></div>
+            <div class="strip blue"></div>
+            <div class="strip red"></div>
+            <div class="strip green"></div>
+            <div class="strip yellow"></div>
+            <div class="strip blue"></div>
+            <div class="strip red"></div>
+            <div class="strip green"></div>
+            <div class="strip yellow"></div>
+            <div class="strip blue"></div>
+            <div class="strip red"></div>
+            <div class="strip green"></div>
+            <div class="strip yellow"></div>
+            <div class="strip blue"></div>
+            <div class="strip red"></div>
+            <div class="strip green"></div>
+            <!-- Strips omitted for brevity -->
+        </div>
+    </div>
+   
+    <div class="main-container">
+        <!-- Moved Mission and Vision sections higher up -->
+        <div id="sub1" class="sub-container hero-section">
+            <div class="overlay">
+                <div class="content-wrapper">
+                    <div class="mission">
+                        <h2>Our Mission</h2>
+                        <p>To deliver high-quality solutions that create value and consistent competitive advantage for our clients.</p>
+
+                
+
+                    </div>
+                    
+                    <div class="separator"></div>
+                    <div class="vision">
+                        <h2>Our Vision</h2>
+                        <p>To be the most trusted and innovative partner for businesses across industries worldwide.</p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+
+
+       
+
+        <!-- Product section removed from here -->
+
+    </div>
+
+    <div class="footer">
+        <p>somphalalimaizemealing@gmail.com</p>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.menu').classList.toggle('active');
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            let slideIndex = 0;
+            function showSlides() {
+                const slides = document.getElementsByClassName("slide");
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1; }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 5000);
+            }
+            showSlides();
+        });
+    </script>
+
+      <!-- Footer -->
+
+
+
+</html>

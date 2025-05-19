@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      padding-bottom: 60px;
+    }
+
+    .product {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin-top: 70px; /* Added space between strips and product */
+    }
+
+    .prod-desc {
+      background-color: yellow;
+      padding: 15px;
+      border-radius: 8px;
+      width: 45%;
+      box-sizing: border-box;
+    }
+
+    .prod-desc h4 {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color:black;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .nav-div {
+      background-color: #f4f4f4;
+      padding: 10px 0;
+    }
+
+    .nav-bar .Name p {
+      font-size: 1.5em;
+      margin: 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 1em;
+    }
+
+    nav ul li a:hover {
+      color: #ff6347;
+    }
+
+    .instrip {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .strip {
+      width: 25px;
+      height: 10px;
+    }
+
+    .yellow { background-color: yellow; }
+    .blue { background-color: blue; }
+    .red { background-color: red; }
+    .green { background-color: green; }
+
+    .product-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  padding: 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.product-side-img {
+  width: 20%;
+  display: flex;
+  align-items: stretch;
+}
+
+.product-side-img img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="nav-div">
+    <div class="nav-bar">
+      <div class="Name">
+        <p>SoMphalali MAIZE-MILLING</p>
+      </div>
+      <nav>
+        <ul id="nav" class="menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="Product.html">PRODUCT</a></li>
+          <li><a href="contacts.html">CONTACTS</a></li>
+          <li><a href="Gallery.html">GALLERY</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="instrip">
+        <div class="strip yellow"></div>
+        <div class="strip blue"></div>
+        <div class="strip red"></div>
+        <div class="strip green"></div>
+        <div class="strip yellow"></div>
+        <div class="strip blue"></div>
+        <div class="strip red"></div>
+        <div class="strip green"></div>
+        <div class="strip yellow"></div>
+        <div class="strip blue"></div>
+        <div class="strip red"></div>
+        <div class="strip green"></div>
+        <div class="strip yellow"></div>
+        <div class="strip blue"></div>
+        <div class="strip red"></div>
+        <div class="strip green"></div>
+        <div class="strip yellow"></div>
+        <div class="strip blue"></div>
+        <div class="strip red"></div>
+        <div class="strip green"></div>
+        <div class="strip yellow"></div>
+        <div class="strip blue"></div>
+        <div class="strip red"></div>
+        <div class="strip green"></div>
+        <div class="strip yellow"></div>
+        <div class="strip blue"></div>
+        <div class="strip red"></div>
+        <div class="strip green"></div>
+        <div class="strip yellow"></div>
+        <div class="strip blue"></div>
+        <div class="strip red"></div>
+        <div class="strip green"></div>
+        <div class="strip yellow"></div>
+        <div class="strip blue"></div>
+        <div class="strip red"></div>
+        <div class="strip green"></div>
+        <div class="strip yellow"></div>
+        <div class="strip blue"></div>
+        <div class="strip red"></div>
+        <div class="strip green"></div>
+        <div class="strip yellow"></div>
+        <div class="strip blue"></div>
+        <div class="strip red"></div>
+        <div class="strip green"></div>
+        <div class="strip yellow"></div>
+        <div class="strip blue"></div>
+        <div class="strip red"></div>
+        <div class="strip green"></div>
+        <div class="strip yellow"></div>
+        <div class="strip blue"></div>
+        <div class="strip red"></div>
+        <div class="strip green"></div>
+        <div class="strip yellow"></div>
+        <div class="strip blue"></div>
+        <div class="strip red"></div>
+        <div class="strip green"></div>
+        <div class="strip yellow"></div>
+        
+      <!-- Add more strips as needed -->
+    </div>
+  </div>
+
+  <div class="main-container">
+    <div class="product-section">
+        
+        <!-- Left Image Block -->
+        <div class="product-side-img">
+            <img src="images/product.png" alt="Left product image">
+
+        </div>
+
+        <!-- Center Product Description Blocks -->
+        <div class="product">
+            <div class="prod-desc dec-1">
+                <h4>Product description</h4>
+            </div>
+            <div class="prod-desc dec-2">
+                <h4>
+                    "Somphalali Maize Meal: <br>
+                    Isintu-Isiko-Isidlo" <br>
+                    “Siphila Ngesphila”<br><br>
+
+                    Experience the rich taste of our traditional maize meal, proudly made in Mpumalanga, the heart of KwaNdebele.<br><br>
+
+                    Our maize meal is:<br>
+                    • Milled from locally sourced high-quality maize<br>
+                    • Processed with love and indigenous methods<br>
+                    • Rich in nutrients and flavor<br>
+                    • Perfect for umratha, iphutthu, or your favorite traditional dish<br><br>
+
+                    Nourishing our community, one meal at a time.
+                </h4>
+            </div>
+        </div>
+
+        <!-- Right Image Block -->
+        <div class="product-side-img">
+            <img src="images/product.png" alt="Right product image">
+        </div>
+
+    </div>
+</div>
+
+
+  <div class="footer">
+    <p>somphalalimaizemealing@gmail.com</p>
+  </div>
+</body>
+</html>

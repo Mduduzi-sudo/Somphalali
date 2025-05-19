@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-div {
+      background-color: #fada00;
+    }
+
+    .nav-bar {
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .Name p {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      background-color: #fada00;
+      padding: 8px 16px;
+      border-radius: 10px;
+      border: 1px solid black;
+    }
+
+    nav ul li a:hover {
+      background-color: black;
+      color: white;
+    }
+
+    .gallery-container {
+  padding: 100px 40px 40px 40px; /* Top Right Bottom Left */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+
+    .gallery-container img {
+      width: 100%;
+      height: 250px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+      object-fit: cover;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .gallery-container img:hover {
+      transform: scale(1.05);
+    }
+
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border: 4px solid white;
+      border-radius: 10px;
+    }
+
+    .lightbox:target {
+      display: flex;
+    }
+    .instrip {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px; /* This adds the needed space below the color strips */
+}
+
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <div class="nav-div">
+    <div class="nav-bar">
+      <div class="Name">
+        <p>SoMphalali MAIZE-MILLING</p>
+      </div>
+      <nav>
+        <ul id="nav" class="menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="Product.html">PRODUCT</a></li>
+          <li><a href="contacts.html">CONTACTS</a></li>
+          <li><a href="Gallery.html">GALLERY</a></li>
+        </ul>
+      </nav>
+      
+    </div>
+    <div class="instrip">
+        <div class="strip yellow"></div>
+        <div class="strip blue"></div>
+        <div class="strip red"></div>
+        <div class="strip green"></div>
+        <div class="strip yellow"></div>
+        <div class="strip blue"></div>
+        <div class="strip red"></div>
+        <div class="strip green"></div>
+        <div class="strip yellow"></div>
+        <div class="strip blue"></div>
+        <div class="strip red"></div>
+        <div class="strip green"></div>
+        <div class="strip yellow"></div>
+        <div class="strip blue"></div>
+        <div class="strip red"></div>
+        <div class="strip green"></div>
+        <div class="strip yellow"></div>
+        <div class="strip blue"></div>
+        <div class="strip red"></div>
+        <div class="strip green"></div>
+        <div class="strip yellow"></div>
+        <div class="strip blue"></div>
+        <div class="strip red"></div>
+        <div class="strip green"></div>
+        <div class="strip yellow"></div>
+        <div class="strip blue"></div>
+        <div class="strip red"></div>
+        <div class="strip green"></div>
+        <div class="strip yellow"></div>
+        <div class="strip blue"></div>
+        <div class="strip red"></div>
+        <div class="strip green"></div>
+        <div class="strip yellow"></div>
+        <div class="strip blue"></div>
+        <div class="strip red"></div>
+        <div class="strip green"></div>
+        <div class="strip yellow"></div>
+        <div class="strip blue"></div>
+        <div class="strip red"></div>
+        <div class="strip green"></div>
+        <div class="strip yellow"></div>
+        <div class="strip blue"></div>
+        <div class="strip red"></div>
+        <div class="strip green"></div>
+        <div class="strip yellow"></div>
+        <div class="strip blue"></div>
+        <div class="strip red"></div>
+        <div class="strip green"></div>
+        <div class="strip yellow"></div>
+        <div class="strip blue"></div>
+        <div class="strip red"></div>
+        <div class="strip green"></div>
+        <!-- Strips omitted for brevity -->
+    </div>
+  </div>
+
+  <!-- Gallery Section -->
+  <div class="gallery-container">
+    <img src="images/G1.jpg" alt="Product 1" onclick="openLightbox(this.src)">
+    <img src="images/G2.jpg" alt="Product 2" onclick="openLightbox(this.src)">
+    <img src="images/G3.jpg" alt="Product 3" onclick="openLightbox(this.src)">
+    <img src="images/G4.jpg" alt="Product 4" onclick="openLightbox(this.src)">
+    <img src="images/G5.jpg" alt="Product 5" onclick="openLightbox(this.src)">
+    <img src="images/G6.jpg" alt="Product 6" onclick="openLightbox(this.src)">
+    <img src="images/G7.jpg" alt="Product 7" onclick="openLightbox(this.src)">
+    <img src="images/G8.jpg" alt="Product 8" onclick="openLightbox(this.src)">
+    <img src="images/G9.jpg" alt="Product 9" onclick="openLightbox(this.src)">
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="">
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>somphalalimaizemealing@gmail.com</p>
+  </div>
+
+  <!-- Lightbox Script -->
+  <script>
+    function openLightbox(src) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox').style.display = 'flex';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
